@@ -174,3 +174,13 @@ box-shadow: 5px 0px 5px rgba(0,0,0,0.3);
 	text-shadow: 3px 3px 5px rgba(0,0,0,0.5);
 
 }
+
+
+.grid {
+	margin-top: 25px;
+}
+
+.thumbnails {
+	margin: 0px 15px 15px 0px;
+	border: 1px solid #999;
+}
