@@ -6,7 +6,17 @@
  *	http://www.mohi.me
  * 	@mohiuddinparekh   
  */
+@font-face {
+    font-family: 'aleoregular';
+    src: url('aleo-regular-webfont.eot');
+    src: url('aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aleo-regular-webfont.woff') format('woff'),
+         url('aleo-regular-webfont.ttf') format('truetype'),
+         url('aleo-regular-webfont.svg#aleoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 body{
 	margin:0;
