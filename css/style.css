@@ -7,10 +7,6 @@
  * 	@mohiuddinparekh   
  */
 
-@font-face {
-    font-family: Aleo;
-    src: local('Aleo'), url('../fonts/Aleo_Regular.otf') format('opentype');
-}
 
 body{
 	margin:0;
@@ -95,7 +91,7 @@ z-index: 100;
 margin: auto;
 margin-top:10px;
 text-align: center;
-font-family: Aleo, serif;
+font-family: 'aleoregular', serif;
 color: #fff;
 font-size: 90px;
 }
@@ -108,7 +104,7 @@ padding-left: 10px;
 
 #home article { 
 position: absolute; 
-font-family: Aleo;
+font-family: 'aleoregular';
 top: 200px;
 left: 105px;
 font-size: 90px; 
@@ -163,7 +159,7 @@ margin-left: 70px;
 }
 
 #externalNav .headline {
-font-family: Aleo, serif;
+font-family: 'aleoregular', serif;
 font-size: 90px;
 color: #4c4c4c;
 }
@@ -178,7 +174,7 @@ color: #ff619a; !important
 }
 
 #resumetop {
-font-family: Aleo, serif;
+font-family: 'aleoregular', serif;
 font-size: 90px;
 color: #fff;
 padding-top: 70px;
@@ -194,7 +190,7 @@ padding-left: 100px;
 }
 
 #resumecontainer h2 {
-font-family: Aleo, serif;
+font-family: 'aleoregular', serif;
 font-size: 36px;
 color: #ff005c;
 font-weight: normal;
