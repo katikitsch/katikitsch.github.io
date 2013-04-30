@@ -269,6 +269,7 @@ height: 690px;
  	transform:rotate(45deg);
 	-ms-transform:rotate(45deg); /* IE 9 */
 	-webkit-transform:rotate(45deg); /* Safari and Chrome */
+	-moz-transform:rotate(45deg); /* Safari and Chrome */
 	margin-right: 85px;
 	vertical-align: center;
 	background-color: #d2d2d0;
@@ -304,6 +305,7 @@ background-color: #ebebeb;
     transform:rotate(-45deg);
 	-ms-transform:rotate(-45deg); /* IE 9 */
 	-webkit-transform:rotate(-45deg); /* Safari and Chrome */
+	-moz-transform:rotate(-45deg); /* Safari and Chrome */
 	margin-left: -45px;
 	margin-top: -45px;
 	opacity:0.6;
