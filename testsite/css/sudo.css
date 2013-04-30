@@ -1,0 +1,19 @@
+
+#slider li {display:none;}	
+#slider li:first-child {display:block;}
+
+
+#slider {
+margin-top: 0px;
+margin-left: -200px;
+height: 690px;
+width: 950px;
+float:left;
+}
+
+#links {
+float: left;
+}
+
+
+pre {white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; }
