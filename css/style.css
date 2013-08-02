@@ -202,21 +202,21 @@ padding-left: 100px;
 
 #resumecontainer h2 {
 font-family: 'aleoregular', serif;
-font-size: 36px;
+font-size: 30px;
 color: #ff005c;
 font-weight: normal;
 }
 
 #resumecontainer h3 {
 font-family: 'Open Sans Condensed', sans-serif;
-font-size: 30px;
+font-size: 24px;
 color: #fff;
 font-weight: normal;
 }
 
 #resumecontainer h4 {
 font-family: 'Open Sans Condensed', sans-serif;
-font-size: 24px;
+font-size: 18px;
 color: #fff;
 font-weight: normal;
 }
@@ -224,7 +224,7 @@ font-weight: normal;
 #resumecontainer p {
 font-family: 'Open Sans Condensed', sans-serif;
 font-size: 16px;
-line-height: 140%;
+line-height: 160%;
 color: #fff;
 font-weight: normal;
 padding-top: 10px;
@@ -243,7 +243,7 @@ padding-left: 100px;
 
 #skills {
 font-family: 'Open Sans Condensed', sans-serif;
-font-size: 30px;
+font-size: 24px;
 color: #fff;
 font-weight: normal;
 }
