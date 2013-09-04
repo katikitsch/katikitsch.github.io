@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url(../images/page_bg.jpg);
+	background-repeat: repeat-x;
+	background-color: #000;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 170%;
+	color: #fff;
+}
+
+#pagewrapper {
+	width: 900px;
+	margin: auto;
+}
+
+#maincontainer {
+	width: 900px;
+	float: left;
+	
+}
+
+#header {
+	float: left;
+	width: 900px;
+	height: 465px;
+	background-color: #000;
+}
+
+#header_nav {
+	float: left;
+	}
+	
+#header_nav ul {
+	list-style-type:none;
+	list-style: none;
+	list-style-image:none;
+	background-image: none;
+	position: absolute;
+	z-index: 1000;
+	font-size: 36px;
+	color: #fff;
+	line-height: 100%;
+	font-weight: bold;
+	padding-left: 15px;
+	padding-top: 20px;
+}
+
+#header_nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#header_nav a:hover {
+	color: #00b9db;
+}
+
+#header_nav a:active {
+	color: #00b9db;
+}
+
+#header_nav a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* rotator in-page placement */
+    div.rotator {
+	position:relative;
+	height:465px;
+}
+/* rotator css */
+	div.rotator ul li {
+	float:left;
+	position:absolute;
+	list-style: none;
+}
+/* rotator image style */	
+	div.rotator ul li img {
+}
+
+div.rotator ul li.show {
+	z-index:500;
+}
+
+#header_title {
+	width: 900px;
+	height: 53px;
+	position: absolute;
+	z-index: 800;
+	padding-top: 412px;
+}
+
+#maincontent {
+	float: left;
+	width: 900px;
+	height: 330px;
+	background-color: #2d2d2d;
+}
+
+#maincontent p {
+	font-weight: 100;
+}
+
+#columnA {
+	float: left;
+	height: 295px;
+	width: 270px;
+	background-color: #2d2d2d;
+	padding-top: 35px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 0;
+}
+
+#columnA h1 {
+	color: #e1ed37;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+#columnA h2 {
+	color: #eb735e;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+
+#columnB {
+	float: left;
+	height: 295px;
+	padding-top: 35px;
+	width: 260px;
+	background-color: #00b9db;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#columnB h1 {
+	color: #2d2d2d;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+#columnB h2 {
+	color: #2d2d2d;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	line-height: 110%;
+}
+
+#columnB p {
+	color: #2d2d2d;
+	margin-bottom: 15px;
+}
+
+#columnB a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#columnB a:hover {
+	color: #ffffff;
+}
+
+#columnB a:visited {
+	color: #fff;
+}
+
+#columnB a:active {
+	color: #fff;
+}
+
+.up_arrow {
+	margin-bottom: 170px;
+}
+
+#releases {
+	overflow: hidden;
+	float: left;
+	width: 240px;
+	height: 220px;
+}
+
+#releases img {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+#columnC {
+float: left;
+	height: 295px;
+	width: 240px;
+	background-color: #e1ed37;
+		padding-top: 35px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 0;
+}
+
+#columnC h1 {
+	color: #2d2d2d;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+#columnC h2 {
+	color: #2d2d2d;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: -5px;
+}
+
+#columnC p {
+	color: #2d2d2d;
+	margin-bottom: 15px;
+}
+
+#footer {
+	clear: both;
+	width: 900px;
+	height: 54px;
+	background-image: url(../images/footer_bg.jpg);
+	background-repeat: repeat-x;
+	color: #a8a8a8;
+	font-size: 10px;
+	margin-bottom: 100px;
+}
+
+.copyright {
+	float: left;
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+.logo {
+	float: right;
+	margin-top: 10px;
+}
+	
+#up {
+  width: 18px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 170px;
+  border: 0;
+  background: transparent url(../images/releases_up.png) no-repeat center top;
+  text-indent: -1000em;
+  cursor: pointer; /* hand-shaped cursor */
+  cursor: hand; /* for IE 5.x */
+}
+
+#down {
+  width: 18px;
+  height: 21px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent url(../images/releases_down.png) no-repeat center top;
+  text-indent: -1000em;
+  cursor: pointer; /* hand-shaped cursor */
+  cursor: hand; /* for IE 5.x */
+}
