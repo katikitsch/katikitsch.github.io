@@ -294,8 +294,7 @@ footer .content-container {
         text-align: center;
         height: auto;
         margin-left: 0;
-        padding-top: 45px;
-        background-position: top center;
+        background: none;
     }
 
     #contact-info ul {
