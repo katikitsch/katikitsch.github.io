@@ -176,7 +176,7 @@ header h1 {
 
 #home {
     width: 100%;
-    background: url('../img/home.jpg') no-repeat center;
+    background: url('../img/home.jpg') no-repeat center right;
 position: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -207,10 +207,22 @@ position: fixed;
     color: #403c45;
 }
 
+@media screen and (max-width: 800px) {
+        #home h1 {
+            color:#fff;
+    }
+}
+
 #home h2 {
     font-size: 25px;
     margin: 0;
     color: #403c45;
+}
+
+@media screen and (max-width: 800px) {
+    #home h2 {
+        color: #fff;
+    }
 }
 
 footer {
@@ -232,7 +244,7 @@ footer .content-container {
 }
 
 #contact-info {
-    background: url('../img/panda-footer.jpg') no-repeat left;
+    background: url('../img/panda-footer.jpg') no-repeat center left;
     text-indent: 40px;
     height: 42px;
     margin-left: 37px;
@@ -263,6 +275,50 @@ footer .content-container {
     display: inline-block;
     text-indent: 0;
     margin: 0px 20px 0 0;
+}
+
+@media screen and (max-width: 667px) {
+
+    footer {
+        z-index: 1000;
+        height: 170px;
+    }
+
+    footer .content-container {
+        padding-top: 7px;
+        margin: auto;
+    }
+
+    #contact-info {
+        float: none;
+        text-align: center;
+        height: auto;
+        margin-left: 0;
+        padding-top: 45px;
+        background-position: top center;
+    }
+
+    #contact-info ul {
+        padding: 0;
+    }
+
+    #contact-info li {
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    #contact-info li:nth-child(even) {
+        display: none;
+    }
+
+    .social {
+        float: none;
+        margin: auto;
+        text-align: center;
+        margin:0;
+        padding: 0;
+    }
 }
 
 #resume-header {
