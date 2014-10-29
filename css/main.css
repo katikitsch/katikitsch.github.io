@@ -557,10 +557,41 @@ display: inline-block;
 
 @media screen and (max-width:1000px) {
     #portfolio .item {
-    width: 50%;
-    float: left;
-    height: 400px;
+        width: 50%;
+        float: left;
+        height: 400px;
+    }
 }
+
+@media screen and (max-width: 531px) {
+    header h1 {
+        margin: 30px auto;
+        float: none;
+    } 
+
+    #home {
+        top: 160px;
+    }
+
+    #mainnav {
+        float: none;
+        margin: 10px 0 0 0;
+    }
+
+    #mainnav ul {
+        padding-left: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #mainnav li {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #mainnav li:first-child {
+        margin-right: 30px;
+    }
 }
 
 /* ==========================================================================
