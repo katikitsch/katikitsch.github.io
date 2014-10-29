@@ -234,6 +234,14 @@ footer {
     font-size: 14px;
 }
 
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
 #footer-home {
     position: fixed;
     bottom: 0;
