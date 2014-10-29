@@ -570,6 +570,17 @@ display: inline-block;
     }
 }
 
+@media screen and (max-width: 650px) {
+    #portfolio .item {
+    width: 100%;
+    float: none;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+}
+
 @media screen and (max-width: 531px) {
     header h1 {
         margin: 30px auto;
