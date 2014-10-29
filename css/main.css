@@ -610,6 +610,10 @@ display: inline-block;
     #mainnav li:first-child {
         margin-right: 30px;
     }
+
+    #resume-header {
+        margin-top: 50px;
+    }
 }
 
 /* ==========================================================================
