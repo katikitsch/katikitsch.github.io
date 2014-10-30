@@ -570,6 +570,25 @@ display: inline-block;
     }
 }
 
+@media screen and (max-width: 900px) {
+
+    #vsnap-brand .gallery-container {
+        width: 90%;
+        padding-left: 5%;
+        padding-right:5%;
+        margin: auto;
+    }
+
+    #vsnap-brand .gallery-container img {
+        float: none;
+        margin: 0 auto 5px;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
 @media screen and (max-width: 650px) {
     #portfolio .item {
     width: 100%;
@@ -635,6 +654,10 @@ display: inline-block;
     }
 
     #resume-header {
+        margin-top: 50px;
+    }
+
+    #gallery-header {
         margin-top: 50px;
     }
 }
