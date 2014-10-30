@@ -611,7 +611,7 @@ display: inline-block;
     }
 
     #resume h1 {
-        margin: auto;
+        margin: 0 auto 15px;
         display: block;
     }
 
