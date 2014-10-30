@@ -578,7 +578,30 @@ display: inline-block;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-}
+    }
+
+    #resume .column {
+        float: none;
+        max-width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .last {
+        margin: auto !important;
+    }
+
+    #resume h1 {
+        margin: auto;
+        display: block;
+    }
+
+    .special {
+        margin: auto;
+        width: 90%;
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 531px) {
