@@ -176,7 +176,7 @@ header h1 {
 
 #home {
     width: 100%;
-    background: url('../img/home.jpg') no-repeat center right;
+    background: url('../img/home.jpg') no-repeat top right;
 position: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
