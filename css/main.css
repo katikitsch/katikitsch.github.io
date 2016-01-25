@@ -12,6 +12,13 @@
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:700);
 @import url(http://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+@font-face {
+  font-family: "Bebas Neue";
+  src:  url("../Fonts/BebasNeueRegular.otf"),
+        url("../Fonts/BebasNeueRegular.ttf");
+  }
 
 html,
 button,
@@ -102,15 +109,18 @@ textarea {
 
 body {
     -webkit-font-smoothing: antialiased;
-    font-family: 'Montserrat', Helvetica, Arial, Sans-serif;
+    font-family: 'Lato', Helvetica, Arial, Sans-serif;
     color: #403c45;
 }
 
 header {
-     border-top: 2px solid #ff436a;
      width: 100%;
-     height: 105px;
+     height: 110px;
      z-index: 1000;
+ }
+
+ h1 {
+    font-family: "Bebas Neue", "Montserrat", Helvetica, sans-serif;
  }
 
 
@@ -139,8 +149,9 @@ header {
     left: 0;
     width: 100%;
     height: 1px;
-    background: #c8c8c7;
+    background: #85f6cc;
     content: '';
+    color: #85f6cc;
     opacity: 0;
     -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
     -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
@@ -154,6 +165,7 @@ header {
 .cl-effect-4 a:focus::after {
     height: 2px;
     opacity: 1;
+    color: #85f6cc;
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     transform: translateY(0px);
@@ -161,16 +173,20 @@ header {
 
 #mainnav li {
     display: inline-block;
-    font-family: 'Montserrat', Helvetica, Arial, Sans-serif;
+    font-family: 'Bebas Neue', Helvetica, Arial, Sans-serif;
     color: #403c45;
+    font-size: 24px;
     margin-left: 45px;
+    text-transform: uppercase;
 }
 
 header h1 {
-    background: url('../img/logo.png') no-repeat center;
-    width: 156px;
+    background: url('../img/kl-logo-2016.png') no-repeat center;
+    background-size: 90px;
+    width: 90px;
+    height: 90px;
     text-indent: -9999px;
-    margin: 30px 0 0 37px;
+    margin: 10px 0 0 17px;
     float: left;
 }
 
@@ -183,7 +199,7 @@ position: fixed;
   -o-background-size: cover;
   background-size: cover;
   bottom: 69px;
-  top: 105px;
+  top: 110px;
   z-index: 500;
 }
 
@@ -194,17 +210,19 @@ position: fixed;
     position: absolute;
     top: 40%;
     margin-left: 7%;
-    color: ##403c45;
+    margin-right: 7%;
+    color: #403c45;
 }
 
 #home p {
-    color: #403c45;
+    color: #ff436a;
 }
 
 #home h1 {
-    font-size: 25px;
+    font-size: 64px;
     margin: 0;
     color: #403c45;
+    line-height:75%;
 }
 
 @media screen and (max-width: 800px) {
@@ -214,7 +232,7 @@ position: fixed;
 }
 
 #home h2 {
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
     color: #403c45;
 }
@@ -230,7 +248,7 @@ footer {
     background: #272626;
     color: #fff;
     height: 70px;
-    font-family: 'Questrial', Helvetica, Arial, Sans-serif;
+    font-family: 'Lato', Helvetica, Arial, Sans-serif;
     font-size: 14px;
 }
 
@@ -335,12 +353,12 @@ footer .content-container {
 }
 
 #resume-header h1 {
-    font-size: 25px;
+    font-size: 36px;
     margin: 0;
 }
 
 #resume-header p {
-    font-size: 14px;
+    font-size: 16px;
     margin:0;
 }
 
@@ -372,7 +390,7 @@ footer .content-container {
 }
 
 #resume h1 {
-    font-size: 21px;
+    font-size: 28px;
     color: #272626;
     padding-bottom: 3px;
     border-bottom: 1px solid #85f6cc;
@@ -381,12 +399,10 @@ footer .content-container {
 }
 
 #resume .column h2 {
-    margin: 0;
-}
-
-#resume .column h2 {
-    font-size: 18px;
+    font-size: 22px;
+     margin: 0;
     color: #ff436a;
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
 }
 
 #resume .column h3 {
@@ -396,8 +412,10 @@ footer .content-container {
 
 #resume .column p {
     font-size: 14px;
-    font-family: 'Questrial', Helvetica, Arial, Sans-serif;
-    margin: 0 0 10px 0;
+    font-family: 'Lato', Helvetica, Arial, Sans-serif;
+    margin: 0 0 20px 0;
+    color: #272626;
+    line-height:22px;
 }
 
 #resume .column {
@@ -634,7 +652,7 @@ display: inline-block;
     } 
 
     #home {
-        top: 160px;
+        top: 195px;
     }
 
     #mainnav {
@@ -658,11 +676,11 @@ display: inline-block;
     }
 
     #resume-header {
-        margin-top: 50px;
+        margin-top: 85px;
     }
 
     #gallery-header {
-        margin-top: 50px;
+        margin-top: 85px;
     }
 }
 
