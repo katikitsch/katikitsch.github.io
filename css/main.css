@@ -469,6 +469,10 @@ margin: 150px auto 0;
     max-width: 100%;
 }
 
+.fma {
+    background: url('../img/fma-thumbnail.jpg');
+}
+
 .vsnap-branding {
     background: url('../img/vsnap-branding-thumbnail.jpg');
 }
@@ -557,7 +561,30 @@ display: inline-block;
     color: #15bd7f;
 }
 
-#vsnap-brand {
+.fma-video {
+    width: 100%;
+    height:auto;
+}
+
+#fma {
+    background: #f6f4f5;
+    color: #272626;
+}
+
+#fma .gallery-container {
+    width: 885px;
+    margin:auto;
+    padding-bottom: 50px;
+}
+
+#fma .gallery-container img {
+    float: left;
+    margin: 20px 5px 5px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+#fma {
     background: #f6f4f5;
     color: #272626;
 }
@@ -594,14 +621,14 @@ display: inline-block;
 
 @media screen and (max-width: 900px) {
 
-    #vsnap-brand .gallery-container {
+    #vsnap-brand .gallery-container, #fma .gallery-container {
         width: 90%;
         padding-left: 5%;
         padding-right:5%;
         margin: auto;
     }
 
-    #vsnap-brand .gallery-container img {
+    #vsnap-brand .gallery-container img, #fma .gallery-container img {
         float: none;
         margin: 0 auto 5px;
         display: block;
