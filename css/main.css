@@ -678,8 +678,21 @@ display: inline-block;
         float: none;
     } 
 
+    header {
+        height: 195px;
+    }
+
     #home {
-        top: 195px;
+        min-height: 500px;
+        position: static;
+    }
+
+    #home .content-container {
+        top: 70%;
+    }
+
+    #footer-home {
+        position: static;
     }
 
     #mainnav {
@@ -702,13 +715,6 @@ display: inline-block;
         margin-right: 30px;
     }
 
-    #resume-header {
-        margin-top: 85px;
-    }
-
-    #gallery-header {
-        margin-top: 85px;
-    }
 }
 
 @media screen and (max-width: 515px) {
