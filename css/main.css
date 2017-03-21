@@ -473,6 +473,10 @@ margin: 150px auto 0;
     background: url('../img/fma-thumbnail.jpg');
 }
 
+.calculator {
+    background: url('../img/ltv-thumbnail.jpg');
+}
+
 .vsnap-branding {
     background: url('../img/vsnap-branding-thumbnail.jpg');
 }
