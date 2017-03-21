@@ -477,6 +477,14 @@ margin: 150px auto 0;
     background: url('../img/ltv-thumbnail.jpg');
 }
 
+.mary {
+    background: url('../img/marybrad-thumbnail.jpg');
+}
+
+.hyperlocal {
+    background: url('../img/hyperlocal-thumbnail.jpg');
+}
+
 .vsnap-branding {
     background: url('../img/vsnap-branding-thumbnail.jpg');
 }
