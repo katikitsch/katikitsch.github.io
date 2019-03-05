@@ -419,9 +419,9 @@ footer .content-container {
 }
 
 #resume .column {
-    max-width: 240px;
+    max-width: 300px;
     float: left;
-    margin-right: 60px;
+    padding-right: 50px;
 }
 
 .last {
@@ -432,6 +432,18 @@ footer .content-container {
     margin-bottom: 50px;
 }
 
+.resume-top .row {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.resume-top .row .column {
+    float: left;
+    padding-right: 60px;
+    box-sizing: border-box;
+    width: 33%;
+}
 #contact form h1 {
     font-family: 'Montserrat', Helvetica, Arial, Sans-serif;
 }
