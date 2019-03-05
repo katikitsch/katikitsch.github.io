@@ -481,6 +481,11 @@ margin: 150px auto 0;
     max-width: 100%;
 }
 
+.wsweekly {
+    background: url('../img/wsweekly-thumbnail.jpg');
+}
+
+
 .fma {
     background: url('../img/fma-thumbnail.jpg');
 }
