@@ -192,7 +192,7 @@ header h1 {
 
 #home {
     width: 100%;
-    background: url('../img/home.jpg') no-repeat top right;
+    background: url('../img/home_2019.jpg') no-repeat top left;
 position: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -209,6 +209,7 @@ position: fixed;
 #home .content-container {
     position: absolute;
     top: 40%;
+    right: 0%;
     margin-left: 7%;
     margin-right: 7%;
     color: #403c45;
@@ -221,7 +222,7 @@ position: fixed;
 #home h1 {
     font-size: 64px;
     margin: 0;
-    color: #403c45;
+    color: #ffffff;
     line-height:75%;
 }
 
@@ -234,7 +235,7 @@ position: fixed;
 #home h2 {
     font-size: 20px;
     margin: 0;
-    color: #403c45;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 800px) {
