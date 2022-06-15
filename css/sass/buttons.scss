@@ -1,0 +1,18 @@
+.main-button {
+	border-radius: 6.5em;
+	background: $blue;
+	display: inline-block;
+	padding: 1.5em 2em;
+	color: $purple;
+	font-weight: bold;
+	text-decoration: none;	
+	border: 3px solid $blue;
+	text-transform: uppercase;
+	transition-timing-function: ease-in-out;
+	transition: background .5s;
+}
+
+.main-button:hover {
+	background: transparent;
+	color: $blue;
+}

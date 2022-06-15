@@ -1,0 +1,40 @@
+@import 'colors';
+@import 'fonts';
+@import 'buttons';
+@import 'nav';
+@import 'home';
+
+.max-width {
+	width: 100%;
+	max-width: 1440px;
+	display: flex;
+	align-content: center;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	column-gap: 6%;
+	row-gap: 1.5em;
+}
+
+.width-33 {
+	width: 27%;
+}
+
+.width-25 {
+	width: 25%
+}
+
+.width-50 {
+	width: 44%;
+}
+
+.width-66 {
+	width: 66%;
+}
+
+.width-75 {
+	width: 75%;
+}
+
+.width-100 {
+	width: 100%;
+}

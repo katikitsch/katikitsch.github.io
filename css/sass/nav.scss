@@ -1,0 +1,93 @@
+#main-nav {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 1em 0;
+	position: absolute;
+	top: 0;
+
+	.max-width {
+		justify-content: space-between;
+		align-items: center;;
+	}
+}
+
+
+#main-nav ul {
+	display: flex;
+	align-items: center;
+	align-content: flex-start;
+	gap: 2em;
+	margin: 0;
+	padding: 0;
+}
+
+#main-nav ul li a {
+	font-weight: bold;
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+}
+
+#main-nav ul li a:after {
+		content: '';
+  	position: absolute;
+  	width: 100%;
+  	transform: scaleX(0);
+  	height: 2px;
+  	bottom: 0;
+  	left: 0;
+  	background-color: $blue;
+  	transform-origin: bottom right;
+  	transition: transform 0.25s ease-out;
+}
+
+#main-nav ul li a:hover:after {
+		 transform: scaleX(1);
+  	transform-origin: bottom left;
+}
+
+.nav-logo {
+	height: 48px;
+	width: 48px;
+	display: inline-block;
+	background: url('../images/kl-logo.svg');
+	background-size: 100%;
+}
+
+#main-nav.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  position: fixed !important;
+  -webkit-box-shadow: 0px 7px 15px -4px rgba(0,0,0,0.15); 
+	box-shadow: 0px 7px 15px -4px rgba(0,0,0,0.15);
+
+	.nav-logo {
+		background: url('../images/kl-logo-color.svg');
+	}
+
+	ul {
+		li {
+			a {
+				background: linear-gradient(90deg, rgba(201,161,242,1) 0%, rgba(245,142,199,1) 100%);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+}
+
+footer {
+	background: $black;
+	color: #fff;
+	margin: 0;
+	padding: 1em;
+	font-size: .875em;
+	text-align: center;
+
+	p {
+		margin: 0;
+		padding: 0;
+	}
+}

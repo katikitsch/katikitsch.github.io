@@ -1,943 +1,268 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-@import url(http://fonts.googleapis.com/css?family=Montserrat:700);
-@import url(http://fonts.googleapis.com/css?family=Questrial);
-@import url(https://fonts.googleapis.com/css?family=Lato);
-
-@font-face {
-  font-family: "Bebas Neue";
-  src:  url("../Fonts/BebasNeueRegular.otf"),
-        url("../Fonts/BebasNeueRegular.ttf");
-  }
-
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
-html {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images, videos, audio and canvas and the bottom of
- * their containers: h5bp.com/i/440
- */
-
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Browse Happy prompt
-   ========================================================================== */
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap");
 body {
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Lato', Helvetica, Arial, Sans-serif;
-    color: #403c45;
+  font-family: "Red Hat Display", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #545454;
+  -webkit-font-smoothing: antialiased;
 }
 
-header {
-     width: 100%;
-     height: 110px;
-     z-index: 1000;
- }
-
- h1 {
-    font-family: "Bebas Neue", "Montserrat", Helvetica, sans-serif;
- }
-
-
-#mainnav {
-    float: right;
-    margin: 37px 37px 0 0;
-   }
-
-   #mainnav ul {
-    margin: 0;
-   }
-
-   #mainnav a {
-    text-decoration: none;
-    color: #403c45;
-    position: relative;
-   }
-
-.cl-effect-4 a {
-    padding: 0 0 5px;
+h1, h2, h3, h4, h5 {
+  font-family: "Shrikhand", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.cl-effect-4 a::after {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: #85f6cc;
-    content: '';
-    color: #85f6cc;
-    opacity: 0;
-    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
-    transition: height 0.3s, opacity 0.3s, transform 0.3s;
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    transform: translateY(-10px);
+h1 {
+  font-size: 7.5em;
+  line-height: 1em;
 }
 
-.cl-effect-4 a:hover::after,
-.cl-effect-4 a:focus::after {
-    height: 2px;
-    opacity: 1;
-    color: #85f6cc;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    transform: translateY(0px);
+h2 {
+  font-size: 6em;
+  line-height: 1em;
 }
 
-#mainnav li {
-    display: inline-block;
-    font-family: 'Bebas Neue', Helvetica, Arial, Sans-serif;
-    color: #403c45;
-    font-size: 24px;
-    margin-left: 45px;
-    text-transform: uppercase;
+h4 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 0.25em;
 }
 
-header h1 {
-    background: url('../img/kl-logo-2016.png') no-repeat center;
-    background-size: 90px;
-    width: 90px;
-    height: 90px;
-    text-indent: -9999px;
-    margin: 10px 0 0 17px;
-    float: left;
+p {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1em;
+  margin: 0 0 1em 0;
+  padding: 0;
 }
 
-#home {
-    width: 100%;
-    background: url('../img/home_2019.jpg') no-repeat top left;
-position: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  bottom: 69px;
-  top: 110px;
-  z-index: 500;
+p.large {
+  font-size: 1.75em;
 }
 
-#home strong {
-    color:#ff436a;
-}
-#home .content-container {
-    position: absolute;
-    top: 40%;
-    right: 0%;
-    margin-left: 7%;
-    margin-right: 7%;
-    color: #403c45;
-}
-
-#home p {
-    color: #ff436a;
+.main-button {
+  border-radius: 6.5em;
+  background: #DBF4FE;
+  display: inline-block;
+  padding: 1.5em 2em;
+  color: #C9A1F2;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid #DBF4FE;
+  text-transform: uppercase;
+  transition-timing-function: ease-in-out;
+  transition: background 0.5s;
 }
 
-#home h1 {
-    font-size: 64px;
-    margin: 0;
-    color: #ffffff;
-    line-height:75%;
+.main-button:hover {
+  background: transparent;
+  color: #DBF4FE;
 }
 
-@media screen and (max-width: 800px) {
-        #home h1 {
-            color:#fff;
-    }
+#main-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+  position: absolute;
+  top: 0;
+}
+#main-nav .max-width {
+  justify-content: space-between;
+  align-items: center;
 }
 
-#home h2 {
-    font-size: 20px;
-    margin: 0;
-    color: #ffffff;
+#main-nav ul {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
 }
 
-@media screen and (max-width: 800px) {
-    #home h2 {
-        color: #fff;
-    }
+#main-nav ul li a {
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+#main-nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #DBF4FE;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#main-nav ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-logo {
+  height: 48px;
+  width: 48px;
+  display: inline-block;
+  background: url("../images/kl-logo.svg");
+  background-size: 100%;
+}
+
+#main-nav.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+  position: fixed !important;
+  -webkit-box-shadow: 0px 7px 15px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 7px 15px -4px rgba(0, 0, 0, 0.15);
+}
+#main-nav.scrolled .nav-logo {
+  background: url("../images/kl-logo-color.svg");
+}
+#main-nav.scrolled ul li a {
+  background: linear-gradient(90deg, rgb(201, 161, 242) 0%, rgb(245, 142, 199) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer {
-    width: 100%;
-    background: #272626;
-    color: #fff;
-    height: 70px;
-    font-family: 'Lato', Helvetica, Arial, Sans-serif;
-    font-size: 14px;
+  background: #545454;
+  color: #fff;
+  margin: 0;
+  padding: 1em;
+  font-size: 0.875em;
+  text-align: center;
 }
-
-footer a {
-    color: #fff;
-}
-
-footer a:hover {
-    color: #fff;
-}
-
-#footer-home {
-    position: fixed;
-    bottom: 0;
-}
-
-footer .content-container {
-    padding-top: 15px;
-}
-
-#contact-info {
-    background: url('../img/panda-footer.jpg') no-repeat center left;
-    text-indent: 40px;
-    height: 42px;
-    margin-left: 37px;
-    float: left;
-    line-height: 1;
-}
-
-.social {
-    float: right;
-    margin-top: 12px;
-    font-size: 16px;
-    margin-right: 37px;
-}
-
-.social a, a:visited {
-    color: #fff;
-}
-
-.social a:hover {
-    color: #85f6cc;
-}
-
-.fa-linkedin, .fa-dribbble {
-    margin-right: 10px; 
-}
-
-#contact-info li {
-    display: inline-block;
-    text-indent: 0;
-    margin: 0px 20px 0 0;
-}
-
-@media screen and (max-width: 667px) {
-
-    footer {
-        z-index: 1000;
-        height: 135px;
-    }
-
-    footer .content-container {
-        padding-top: 7px;
-        margin: auto;
-    }
-
-    #contact-info {
-        float: none;
-        text-align: center;
-        height: auto;
-        margin-left: 0;
-        background: none;
-    }
-
-    #contact-info ul {
-        padding: 0;
-    }
-
-    #contact-info li {
-        display: block;
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
-
-    #contact-info li:nth-child(even) {
-        display: none;
-    }
-
-    .social {
-        float: none;
-        margin: auto;
-        text-align: center;
-        margin:0;
-        padding: 0;
-    }
-}
-
-#resume-header {
-    width: 100%;
-    background: #272626;
-    color: #f6f4f5;
-}
-
-#resume-header h1 {
-    font-size: 36px;
-    margin: 0;
-}
-
-#resume-header p {
-    font-size: 16px;
-    margin:0;
-}
-
-#resume-header .content-container {
-    margin: auto;
-    text-align: center;
-    height: 170px;
-    padding-top: 60px;
-}
-
-#resume-header a, #resume-header a:visited {
-    color: #85f6cc;
-}
-
-.rocket {
-    margin-bottom: 15px;
-}
-
-#resume {
-    width: 100%;
-    background: #f6f4f5;
-    color: #272626;
-}
-
-#resume .content-container {
-    max-width: 840px;
-    margin:auto;
-    padding: 60px 0;
-}
-
-#resume h1 {
-    font-size: 28px;
-    color: #272626;
-    padding-bottom: 3px;
-    border-bottom: 1px solid #85f6cc;
-    margin: 0 0 30px 0;
-    display: inline-block;
-}
-
-#resume .column h2 {
-    font-size: 22px;
-     margin: 0;
-    color: #ff436a;
-    font-family: 'Bebas Neue', Helvetica, sans-serif;
-}
-
-#resume .column h3 {
-    font-size: 14px;
-    margin: 0 0 10px 0;
-}
-
-#resume .column p {
-    font-size: 14px;
-    font-family: 'Lato', Helvetica, Arial, Sans-serif;
-    margin: 0 0 20px 0;
-    color: #272626;
-    line-height:22px;
-}
-
-#resume .column {
-    max-width: 300px;
-    float: left;
-    padding-right: 50px;
-}
-
-.last {
-    margin-right: 0 !important;
-}
-
-.resume-top {
-    margin-bottom: 50px;
-}
-
-.resume-top .row {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-
-.resume-top .row .column {
-    float: left;
-    padding-right: 60px;
-    box-sizing: border-box;
-    width: 33%;
-}
-#contact form h1 {
-    font-family: 'Montserrat', Helvetica, Arial, Sans-serif;
-}
-
-#portfolio {
-    background: #313131;
-}
-
-#portfolio .item {
-    width: 33.333333%;
-    float: left;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-}
-
-#portfolio .item h1 {
-font-size: 25px;
-color: #fff;
-border-bottom: 1px solid #15bd7f;
-padding-bottom: 10px;
-display: inline-block;
-margin: 150px auto 0;
-}
-
-#portfolio .item p {
-    color: #fff;
-    font-size: 14px;
-    max-width: 250px;
-    margin: 15px auto 0;
-}
-
-#portfolio .item img {
-    max-width: 100%;
-}
-
-.wsweekly {
-    background: url('../img/wsweekly-thumbnail.jpg');
-}
-
-
-.fma {
-    background: url('../img/fma-thumbnail.jpg');
-}
-
-.calculator {
-    background: url('../img/ltv-thumbnail.jpg');
-}
-
-.mary {
-    background: url('../img/marybrad-thumbnail.jpg');
-}
-
-.hyperlocal {
-    background: url('../img/hyperlocal-thumbnail.jpg');
+footer p {
+  margin: 0;
+  padding: 0;
 }
 
-.vsnap-branding {
-    background: url('../img/vsnap-branding-thumbnail.jpg');
+#home-header, #home-portfolio, #home-resume, #home-contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 6em 0;
+  margin: 0;
 }
 
-.vsnap-app {
-    background: url('../img/vsnap-app-thumbnail.jpg');
+#home-header {
+  background: rgb(255, 197, 165);
+  background: linear-gradient(180deg, rgb(255, 197, 165) 0%, rgb(245, 142, 199) 35%, rgb(201, 161, 242) 100%);
+  padding-top: 8em;
 }
-
-.vsnap-homepage {
-    background: url('../img/vsnap-homepage-thumbnail.jpg');
-}
-
-.myperks-app {
-    background: url('../img/myperks-thumbnail.jpg');
-}
-
-.perkstreet-homepage {
-    background: url('../img/perkstreet-homepage-thumbnail.jpg');
-}
-
-.midnight-static {
-    background: url('../img/ms-thumbnail.jpg');
-}
-
-.ps-landing {
-    background: url('../img/ps-landing-thumbnail.jpg');
-}
-
-.kotj {
-    background: url('../img/kotj-thumbnail.jpg');
-}
-
-.cls {
-    background: url('../img/cls-thumbnail.jpg');
-}
-
-.misc {
-    background: url('../img/misc-thumbnail.jpg');
-}
-.item .content-container {
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    -webkit-transition: background .5s;
-    transition: background .5s;
-}
-
-.item .content-container:hover {
-    background: rgba(0,0,0,0.4);
-}
-
-.item a {
-    text-decoration: none;
-}
-
-#portfolio .portfolio-row {
-    background-color: #111111;
-}
-
-#gallery-header {
-    width: 100%;
-    background: #f6f4f5;
-    color: #272626;
-}
-
-#gallery-header h1 {
-    font-size: 25px;
-    margin: 0;
-border-bottom: 1px solid #15bd7f;
-padding-bottom: 10px;
-display: inline-block;
-}
-
-#gallery-header p {
-    font-size: 14px;
-    margin:15px 0 0;
-}
-
-#gallery-header .content-container {
-    margin: auto;
-    text-align: center;
-    padding: 60px 0;
-}
-
-#gallery-header .content-container a {
-    color: #15bd7f;
-}
-
-.fma-video {
-    width: 100%;
-    height:auto;
-}
-
-#fma {
-    color: #272626;
+#home-header .max-width {
+  align-items: center;
+  justify-content: space-around;
 }
 
-#fma .gallery-container {
-    width: 885px;
-    margin:auto;
-    padding-bottom: 50px;
+#home-header img {
+  max-height: 48em;
+  width: auto;
 }
 
-#fma .gallery-container img {
-    float: left;
-    margin: 20px 5px 5px 0px;
-    max-width: 100%;
-    height: auto;
+#home-header h1 {
+  color: #DBF4FE;
 }
 
-#fma {
-    color: #272626;
+#home-header p {
+  font-size: 2.5em;
 }
 
-#vsnap-brand .gallery-container {
-    width: 885px;
-    margin:auto;
-    padding-bottom: 50px;
+#home-portfolio, #home-contact {
+  background: #DBF4FE;
 }
-
-#vsnap-brand .gallery-container img {
-    float: left;
-    margin: 0 5px 5px 0px;
+#home-portfolio h2, #home-contact h2 {
+  color: #C9A1F2;
 }
-
-#ps-home .gallery-container {
-    width: 800px;
-    margin: 10px auto;
-    padding-bottom: 50px;
-    text-align: center;
+#home-portfolio .max-width, #home-contact .max-width {
+  justify-content: center;
 }
 
-#ps-home .gallery-container img {
-    margin-bottom: 5px;
+#home-portfolio .max-width {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
-@media screen and (max-width:1000px) {
-    #portfolio .item {
-        width: 50%;
-        float: left;
-        height: 400px;
-    }
+#home-contact .max-width {
+  justify-content: center;
+  align-items: center;
 }
-
-@media screen and (max-width: 900px) {
-
-    #vsnap-brand .gallery-container, #fma .gallery-container {
-        width: 90%;
-        padding-left: 5%;
-        padding-right:5%;
-        margin: auto;
-    }
-
-    #vsnap-brand .gallery-container img, #fma .gallery-container img {
-        float: none;
-        margin: 0 auto 5px;
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-
+#home-contact .width-33 {
+  display: flex;
+  justify-content: center;
 }
-
-@media screen and (max-width: 650px) {
-    #portfolio .item {
-    width: 100%;
-    float: none;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    }
-
-    #resume .column {
-        float: none;
-        max-width: 90%;
-        margin: auto;
-        text-align: center;
-    }
-
-    .last {
-        margin: auto !important;
-    }
-
-    #resume h1 {
-        margin: 0 auto 15px;
-        display: block;
-    }
-
-    .special {
-        margin: auto;
-        width: 90%;
-        text-align: center;
-    }
-
+#home-contact .width-66 {
+  display: flex;
+  justify-content: center;
 }
-
-@media screen and (max-width: 531px) {
-    header h1 {
-        margin: 30px auto;
-        float: none;
-    } 
-
-    header {
-        height: 195px;
-    }
-
-    #home {
-        min-height: 500px;
-        position: static;
-    }
-
-    #home .content-container {
-        top: 70%;
-    }
-
-    #footer-home {
-        position: static;
-    }
-
-    #mainnav {
-        float: none;
-        margin: 10px 0 0 0;
-    }
-
-    #mainnav ul {
-        padding-left: 0;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #mainnav li {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    #mainnav li:first-child {
-        margin-right: 30px;
-    }
-
+#home-contact .width-66 .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
-@media screen and (max-width: 515px) {
-    #resume-header .content-container {
-        height: 180px;
-        padding-top: 40px;
-    }
+#home-resume {
+  background: #C9A1F2;
 }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+#home-resume h2 {
+  color: #DBF4FE;
+  margin-bottom: 0.25em;
 }
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
+#home-resume p.large {
+  margin-bottom: 2em;
 }
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
 
-.hidden {
-    display: none !important;
-    visibility: hidden;
+.resume-download {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 2em;
 }
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+.resume-download a {
+  margin-bottom: 1em;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+.max-width {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 6%;
+  row-gap: 1.5em;
 }
 
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
+.width-33 {
+  width: 27%;
 }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.width-25 {
+  width: 25%;
 }
 
-.clearfix:after {
-    clear: both;
+.width-50 {
+  width: 44%;
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
+.width-66 {
+  width: 66%;
 }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+.width-75 {
+  width: 75%;
 }
 
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+.width-100 {
+  width: 100%;
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+/*# sourceMappingURL=main.css.map */

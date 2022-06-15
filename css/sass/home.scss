@@ -1,0 +1,100 @@
+#home-header, #home-portfolio, #home-resume, #home-contact {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 6em 0;
+	margin: 0;
+}
+
+#home-header {
+	background: rgb(255,197,165);
+	background: linear-gradient(180deg, rgba(255,197,165,1) 0%, rgba(245,142,199,1) 35%, rgba(201,161,242,1) 100%);
+	padding-top: 8em;
+
+	.max-width {
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+
+#home-header img {
+	max-height: 48em;
+	width: auto;
+}
+
+#home-header h1 {
+	color: $blue;
+}
+
+#home-header p {
+	font-size: 2.5em;
+}
+
+#home-portfolio, #home-contact {
+	background: $blue;
+
+	h2 {
+		color: $purple;
+	}
+
+	.max-width {
+		justify-content: center;
+	}
+}
+
+#home-portfolio {
+	.max-width {
+		flex-direction: column;
+		text-align: center;
+		align-items:center;
+	}
+}
+
+#home-contact {
+
+	.max-width {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.width-33 {
+		display: flex;
+		justify-content: center;
+	}
+
+	.width-66 {
+		display: flex;
+		justify-content: center;
+
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+		}
+	}
+}
+
+#home-resume {
+	background: $purple;
+
+	h2 {
+		color: $blue;
+		margin-bottom: .25em;
+	}
+
+	p.large {
+		margin-bottom: 2em;
+	}
+}
+
+
+.resume-download {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 2em;
+
+	a {
+		margin-bottom: 1em;
+	}
+}
