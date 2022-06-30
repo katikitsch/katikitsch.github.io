@@ -16,3 +16,22 @@
 	background: transparent;
 	color: $blue;
 }
+
+.secondary-button {
+	border-radius: 6.5em;
+	background: transparent;
+	display: inline-block;
+	padding: 1em 1.5em;
+	color: $blue;
+	font-weight: bold;
+	text-decoration: none;	
+	border: 3px solid $blue;
+	text-transform: uppercase;
+	transition-timing-function: ease-in-out;
+	transition: background .5s;
+}
+
+.secondary-button:hover {
+	background: $blue;
+	color: $purple;
+}

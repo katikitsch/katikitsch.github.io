@@ -48,6 +48,15 @@
 		text-align: center;
 		align-items:center;
 	}
+
+	.main-button {
+		border-color: $purple;
+	}
+
+	.main-button:hover {
+		background: $purple;
+		color: $blue;
+	}
 }
 
 #home-contact {
@@ -96,5 +105,57 @@
 
 	a {
 		margin-bottom: 1em;
+	}
+}
+
+.slider-container {
+	width: 100%;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	gap: 3%;
+	margin: 2em 0;
+
+	a {
+		text-decoration: none;
+		color: $blue;
+	}
+
+	h3 {
+		margin-bottom: .5em;
+	}
+
+	.item {
+		width: 30%;
+		height: 400px;
+		display: flex;
+		background: $purple;
+		align-items: center;
+		align-content: center;
+		flex-direction: column;
+		justify-content: center;
+		color: $blue;
+		background-size: cover;
+		opacity: .8;
+		transition: opacity .5s;
+	}
+
+	.item:hover {
+		opacity: 1;
+	}
+
+	.item.neutron {
+		background: url('../images/n4-thumbnail.jpg');
+		background-size: cover;
+	}
+
+	.item.bv {
+		background: url('../images/bv-thumbnail.jpg');
+		background-size: cover;
+	}
+
+	.item.ws {
+		background: url('../images/ws-thumbnail.jpg');
+		background-size: cover;
 	}
 }

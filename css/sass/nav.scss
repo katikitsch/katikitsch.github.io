@@ -12,6 +12,22 @@
 	}
 }
 
+#main-nav.portfolio-page {
+	ul {
+		li {
+			a {
+				background: linear-gradient(90deg, rgba(201,161,242,1) 0%, rgba(245,142,199,1) 100%);
+  			-webkit-background-clip: text;
+  			-webkit-text-fill-color: transparent;
+				}
+			}
+		}
+
+		.nav-logo {
+			background: url('../images/kl-logo-color.svg');
+		}
+	}
+
 
 #main-nav ul {
 	display: flex;
@@ -60,6 +76,7 @@
   background-color: #fff !important;
   transition: background-color 200ms linear;
   position: fixed !important;
+  z-index: 9999;
   -webkit-box-shadow: 0px 7px 15px -4px rgba(0,0,0,0.15); 
 	box-shadow: 0px 7px 15px -4px rgba(0,0,0,0.15);
 

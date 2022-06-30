@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4 {
   font-family: "Shrikhand", sans-serif;
   margin: 0;
   padding: 0;
@@ -16,10 +16,17 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-size: 7.5em;
   line-height: 1em;
+  margin: 0 0 0.25em 0;
 }
 
 h2 {
   font-size: 6em;
+  line-height: 1em;
+  margin: 0 0 0.25em 0;
+}
+
+h3 {
+  font-size: 3em;
   line-height: 1em;
 }
 
@@ -27,6 +34,13 @@ h4 {
   font-size: 1.5em;
   line-height: 1em;
   margin-bottom: 0.25em;
+}
+
+h5 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.25em;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 p {
@@ -38,6 +52,15 @@ p {
 
 p.large {
   font-size: 1.75em;
+}
+
+a {
+  color: #FFC5A5;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover, a:active {
+  color: #FFA16C;
 }
 
 .main-button {
@@ -59,6 +82,25 @@ p.large {
   color: #DBF4FE;
 }
 
+.secondary-button {
+  border-radius: 6.5em;
+  background: transparent;
+  display: inline-block;
+  padding: 1em 1.5em;
+  color: #DBF4FE;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid #DBF4FE;
+  text-transform: uppercase;
+  transition-timing-function: ease-in-out;
+  transition: background 0.5s;
+}
+
+.secondary-button:hover {
+  background: #DBF4FE;
+  color: #C9A1F2;
+}
+
 #main-nav {
   width: 100%;
   display: flex;
@@ -70,6 +112,15 @@ p.large {
 #main-nav .max-width {
   justify-content: space-between;
   align-items: center;
+}
+
+#main-nav.portfolio-page ul li a {
+  background: linear-gradient(90deg, rgb(201, 161, 242) 0%, rgb(245, 142, 199) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#main-nav.portfolio-page .nav-logo {
+  background: url("../images/kl-logo-color.svg");
 }
 
 #main-nav ul {
@@ -119,6 +170,7 @@ p.large {
   background-color: #fff !important;
   transition: background-color 200ms linear;
   position: fixed !important;
+  z-index: 9999;
   -webkit-box-shadow: 0px 7px 15px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 7px 15px -4px rgba(0, 0, 0, 0.15);
 }
@@ -190,6 +242,13 @@ footer p {
   text-align: center;
   align-items: center;
 }
+#home-portfolio .main-button {
+  border-color: #C9A1F2;
+}
+#home-portfolio .main-button:hover {
+  background: #C9A1F2;
+  color: #DBF4FE;
+}
 
 #home-contact .max-width {
   justify-content: center;
@@ -230,6 +289,167 @@ footer p {
   margin-bottom: 1em;
 }
 
+.slider-container {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 3%;
+  margin: 2em 0;
+}
+.slider-container a {
+  text-decoration: none;
+  color: #DBF4FE;
+}
+.slider-container h3 {
+  margin-bottom: 0.5em;
+}
+.slider-container .item {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  background: #C9A1F2;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #DBF4FE;
+  background-size: cover;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.slider-container .item:hover {
+  opacity: 1;
+}
+.slider-container .item.neutron {
+  background: url("../images/n4-thumbnail.jpg");
+  background-size: cover;
+}
+.slider-container .item.bv {
+  background: url("../images/bv-thumbnail.jpg");
+  background-size: cover;
+}
+.slider-container .item.ws {
+  background: url("../images/ws-thumbnail.jpg");
+  background-size: cover;
+}
+
+#portfolio-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 8em 0 6em;
+  margin: 0;
+}
+#portfolio-container .max-width {
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3%;
+}
+#portfolio-container .max-width .width-25 {
+  width: 22%;
+}
+#portfolio-container .max-width .width-75 {
+  width: 72%;
+}
+#portfolio-container h2 {
+  color: #FFC5A5;
+}
+#portfolio-container img {
+  max-width: 100%;
+  height: auto;
+}
+#portfolio-container video {
+  max-width: 100%;
+  height: auto;
+}
+
+.portfolio-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.portfolio-nav ul li {
+  margin: 1em 0;
+  padding: 0;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.portfolio-nav ul li a {
+  color: #545454;
+  text-decoration: none;
+  font-weight: normal;
+}
+.portfolio-nav ul li a:hover, .portfolio-nav ul li a:active {
+  color: #FFA16C;
+}
+.portfolio-nav ul li a.active {
+  font-weight: bold;
+  color: #FFC5A5;
+}
+
+.portfolio-tiles {
+  max-width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 2em 0;
+  flex-wrap: wrap;
+  gap: 1em 1%;
+}
+.portfolio-tiles a {
+  text-decoration: none;
+  color: #DBF4FE;
+}
+.portfolio-tiles h3 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+.portfolio-tiles p.large {
+  font-size: 1.25em;
+}
+.portfolio-tiles .item {
+  width: 32%;
+  height: 350px;
+  display: flex;
+  background: #C9A1F2;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #DBF4FE;
+  background-size: cover;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+  text-align: center;
+}
+.portfolio-tiles .item:hover {
+  opacity: 1;
+}
+.portfolio-tiles .item.neutron {
+  background: url("../images/n4-thumbnail.jpg");
+  background-size: cover;
+}
+.portfolio-tiles .item.bv {
+  background: url("../images/bv-thumbnail.jpg");
+  background-size: cover;
+}
+.portfolio-tiles .item.ws {
+  background: url("../images/ws-thumbnail.jpg");
+  background-size: cover;
+}
+.portfolio-tiles .item.product-messaging {
+  background: url("../images/ipm-thumbnail.jpg");
+  background-size: cover;
+}
+.portfolio-tiles .item.ws-pricing {
+  background: url("../images/pricing-thumbnail.jpg");
+  background-size: cover;
+}
+.portfolio-tiles .item.tlx {
+  background: url("../images/telelectrix-thumbnail.jpg");
+  background-size: cover;
+}
+
 .max-width {
   width: 100%;
   max-width: 1440px;
@@ -263,6 +483,12 @@ footer p {
 
 .width-100 {
   width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .max-width {
+    max-width: 90%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
