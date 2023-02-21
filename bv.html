@@ -22,21 +22,53 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="js/sticky-nav.js"></script>
+<script src="js/sticky-nav.js"></script>
+
+<script type="text/javascript">
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </head>
 
 <body>
-    <nav id="main-nav" class="portfolio-page">
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <div class="logo-bar">
+            <a href="#home">
+                <div class="nav-logo"></div>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="portfolio.html" class="page-link">Portfolio</a>
+        <a href="#home-resume" class="page-link">Experience</a>
+        <a href="#home-contact" class="page-link">Contact</a>
+      </div>
+      
+    </div>
+
+    <nav id="main-nav" class="homepage">
         <div class="max-width">
             <a href="index.html"><div class="nav-logo"></div></a>
             <ul>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="index.html#home-resume">RESUME</a></li>
-                <li><a href="index.html#home-contact">CONTACT</a></li>             
-                <li><a href="https://telelectrix.com" target="_blank">MUSIC</a></li>
+                <li><a href="#home-resume">EXPERIENCE</a></li>
+                <li><a href="#home-contact">CONTACT</a></li>             
             </ul>
         </div>
     </nav>
@@ -46,32 +78,40 @@
                 <h4>Portfolio</h4>
                 <ul>
                     <li><a href="neutron.html">Neutron 4</a></li>
-                    <li><a href="product-messaging.html">In-Product Messaging</a></li>
-                    <li><a href="#" class="active">Building Ventures</a></li>
+                    <li><a href="product-messaging.html">Music Production Suite Pro</a></li>
+                    <li><a href="#" class="selected">Building Ventures</a></li>
                     <li><a href="ws-campaigns.html">WordStream Campaigns</a></li>
                     <li><a href="ws-pricing.html">WordStream Pricing Page</a></li>
                     <li><a href="telelectrix.html">Telelectrix</a></li>
                 </ul>
             </div>
-            <div class="width-75">
-                <h2>Building Ventures</h2>
-                <p class="large">Building Ventures is a venture capital firm focused on Built Environment entrepeneurs and start-ups. Working with a developer, I designed a new website for them, featuring a newly defined web style guide and a sleek homepage animation.</p>
+            <div class="width-75 portfolio-column">
+                <div>
+                    <img src="images/building-ventures.svg" alt="Building Ventures" class="portfolio-title">
+                    <p class="large">Building Ventures is a venture capital firm focused on Built Environment entrepreneurs and start-ups. Working with a developer, I designed a new website for them, featuring a newly defined web style guide and a sleek homepage animation.</p>
+                </div>
 
-                <h5>Style Tiles</h5>
-                <img src="images/bv-style-tiles.jpg" alt="Building Ventures Style Tiles">
+                <div>
+                    <h4>Style Tiles</h4>
+                    <img src="images/bv-style-tiles.jpg" alt="Building Ventures Style Tiles">
+                </div>
 
-                <h5>Website</h5>
-                <img src="images/bv-site.jpg" alt="Building Ventures Page Designs">
+                <div>
+                    <h4>Website</h4>
+                    <img src="images/bv-site.jpg" alt="Building Ventures Page Designs">
+                </div>
 
-                <h5>Animation</h5>
-                <video controls>
-                    <source src="images/bv_homepage_animation.mp4">
-                </video>
+                <div>
+                    <h4>Animation</h4>
+                    <video controls>
+                        <source src="images/bv_homepage_animation.mp4">
+                    </video>
+                </div>
             </div>
         </div>
     </section>
     <footer>
-        <p>&copy; 2022 Kate Lindsay</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Kate Lindsay</p>
     </footer>  
 </body>
 </html>

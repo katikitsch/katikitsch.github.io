@@ -1,4 +1,13 @@
-#home-header, #home-portfolio, #home-resume, #home-contact {
+#home {
+	background-color: #000000;
+	color: $white;
+
+	.title {
+		max-width: 100%;
+	}
+}
+
+#home-header, #home-resume, #home-contact {
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -7,19 +16,101 @@
 }
 
 #home-header {
-	background: rgb(255,197,165);
-	background: linear-gradient(180deg, rgba(255,197,165,1) 0%, rgba(245,142,199,1) 35%, rgba(201,161,242,1) 100%);
-	padding-top: 8em;
+	background: none;
+	background-image: url('../images/top-bg.png');
+	background-size: 100%;
+	background-position: top;
+	background-repeat: no-repeat;
+	padding-top: 12em;
+	color: $white;
+
+	@media screen and (max-width: 768px) {
+		padding-top: 10em;
+	}
 
 	.max-width {
 		align-items: center;
 		justify-content: space-around;
+
+		.width-50:first-child {
+			position: relative;
+
+			@media screen and (max-width: 768px) {
+				margin-bottom: 1em;
+				padding: 0 6em;
+			}
+
+			@media screen and (max-width: 390px) {
+				padding: 0 3em;
+			}
+		}
+	}
+
+	img.bottom-star {
+		position: absolute;
+		left: 12%;
+		top: 70%;
+		animation: Rotate 10s linear infinite;
+		height: 35%;
+		width: auto;
+
+		@media screen and (max-width: 1024px) {
+			left: 27%;
+			top: 74%;
+		}
+	}
+
+	img.top-left-star {
+		position: absolute;
+		left: 12%;
+		top: 11%;	
+		animation: Rotate 15s linear infinite;			
+		height: 18%;
+		width: auto;
+
+		@media screen and (max-width: 1024px) {
+			left: 20%;
+		}
+	}
+
+	img.top-right-star {
+		position: absolute;
+		left: 83%;
+		top: -5%;	
+		animation: Rotate 20s linear infinite;	
+		height: 3em;
+		width: auto;
+		height: 8%;
+		width: auto;
+
+		@media screen and (max-width: 1024px) {
+			left: 73%;
+			top: -8%;		
+		}
+	}
+
+	img.kate-portrait {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 }
 
-#home-header img {
-	max-height: 48em;
+
+@keyframes Rotate
+{from { transform: rotate(0deg) }
+ to { transform: rotate(800deg) }  /**change to a higher value for more seamless loop*/
+}
+
+
+#home-header img.fuzz {
+	max-height: initial;
+	position: absolute;	
+	mix-blend-mode: screen;
+	height: 80%;
 	width: auto;
+	top: 17em;
+	left: -25%;
 }
 
 #home-header h1 {
@@ -27,72 +118,91 @@
 }
 
 #home-header p {
-	font-size: 2.5em;
-}
-
-#home-portfolio, #home-contact {
-	background: $blue;
-
-	h2 {
-		color: $purple;
-	}
-
-	.max-width {
-		justify-content: center;
-	}
+	font-size: 2.25em;
+	letter-spacing: .25em;
+	color: $white;
 }
 
 #home-portfolio {
-	.max-width {
-		flex-direction: column;
-		text-align: center;
-		align-items:center;
+	text-align: center;
+	padding-top: 6em;
+	justify-content: center;
+
+	.title {
+		display: block;
 	}
 
-	.main-button {
-		border-color: $purple;
+	.title, .main-button {
+		margin: 0 auto 3em;
 	}
 
-	.main-button:hover {
-		background: $purple;
-		color: $blue;
-	}
 }
 
 #home-contact {
 
-	.max-width {
-		justify-content: center;
-		align-items: center;
-	}
+	background: url('../images/decorative-lines-bottom-left.png') no-repeat bottom left;
+	background-size: 100%;
+	flex-wrap: wrap;
+	width: 100%;
+	display: flex;
+	padding: 6em 0 0;
+	margin: 0;
 
-	.width-33 {
-		display: flex;
-		justify-content: center;
-	}
 
-	.width-66 {
+	.width-50 {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-start;
 
 		.contact-info {
 			display: flex;
 			flex-direction: column;
-			gap: 1em;
+			gap: 1.5em;
+
+			b {
+				color: $pink;
+			}
 		}
+	}
+
+	.footer {
+		width: 100%;
+		text-align: center;
+		padding-top: 18em;
 	}
 }
 
 #home-resume {
-	background: $purple;
 
-	h2 {
-		color: $blue;
-		margin-bottom: .25em;
-	}
+	position: relative;
 
 	p.large {
 		margin-bottom: 2em;
+	}
+
+	.title {
+		color: $pink;
+	}
+
+	.decorative-lines {
+		position: absolute;
+		right: 0;
+		top: -3em;
+		z-index: -9999;
+		height: 50%;
+		width: auto;
+
+		@media screen and (max-width: 1024px) {
+			height: 40%;
+		}
+
+		@media screen and (max-width: 768px) {
+			height: 25%;
+		}
+
+		@media screen and (max-width: 390px) {
+			height: 10%;
+			top: -4em;
+		}
 	}
 }
 
@@ -116,46 +226,47 @@
 	gap: 3%;
 	margin: 2em 0;
 
+	@media screen and (max-width: 768px) {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
 	a {
 		text-decoration: none;
-		color: $blue;
+		color: $white;
 	}
 
 	h3 {
-		margin-bottom: .5em;
+		margin-top: .5em;
+		text-transform: uppercase;
 	}
 
-	.item {
+	.thumbnail-block{
 		width: 30%;
-		height: 400px;
-		display: flex;
-		background: $purple;
-		align-items: center;
-		align-content: center;
-		flex-direction: column;
-		justify-content: center;
-		color: $blue;
-		background-size: cover;
-		opacity: .8;
-		transition: opacity .5s;
+		height: auto;
+		opacity: .7;
+		scale: .95;
+		transition: opacity ease .25s;		
+		transition: scale ease .25s;
+
+		@media screen and (max-width: 768px) {
+			width: 44%;
+		}
+
+		@media screen and (max-width: 390px) {
+			width: 100%;
+		}
 	}
 
-	.item:hover {
+	.thumbnail-block:hover {
 		opacity: 1;
+		scale: 1;
 	}
 
-	.item.neutron {
-		background: url('../images/n4-thumbnail.jpg');
-		background-size: cover;
+	.thumbnail {
+		max-width: 100%;
+		height: auto;
+		border: 3px solid $pink;
 	}
 
-	.item.bv {
-		background: url('../images/bv-thumbnail.jpg');
-		background-size: cover;
-	}
-
-	.item.ws {
-		background: url('../images/ws-thumbnail.jpg');
-		background-size: cover;
-	}
 }

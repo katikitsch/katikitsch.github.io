@@ -22,107 +22,147 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="js/sticky-nav.js"></script>
+<script src="js/sticky-nav.js"></script>
+
+<script type="text/javascript">
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </head>
 
-<body>
-    <nav id="main-nav">
+<body id="home">
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <div class="logo-bar">
+            <a href="#home">
+                <div class="nav-logo"></div>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="portfolio.html" class="page-link">Portfolio</a>
+        <a href="#home-resume" class="page-link">Experience</a>
+        <a href="#home-contact" class="page-link">Contact</a>
+      </div>
+      
+    </div>
+
+    <nav id="main-nav" class="homepage">
         <div class="max-width">
             <a href="index.html"><div class="nav-logo"></div></a>
             <ul>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="#home-resume">RESUME</a></li>
+                <li><a href="#home-resume">EXPERIENCE</a></li>
                 <li><a href="#home-contact">CONTACT</a></li>             
-                <li><a href="https://telelectrix.com" target="_blank">MUSIC</a></li>
             </ul>
         </div>
     </nav>
     <section id="home-header">
-        <div class="max-width">
+        <div class="max-width">         
             <div class="width-50">
-                <img src="images/home-illustration.svg" alt="Illustrated self portrait of Kate Lindsay">
+                <img class="top-left-star" src="images/star-filled.svg">            
+                <img class="top-right-star" src="images/star-filled.svg">
+                <img class="bottom-star" src="images/star-outline.svg">
+                <img src="images/kate-portrait-home.png" class="kate-portrait" alt="Illustrated self portrait of Kate Lindsay">
             </div>
             <div class="width-50">
-                <h1>Hello, there.</h1>
-                <p>I’m Kate Lindsay, a visual designer and musician living in the Greater Boston area.</p>
+                <img src="images/katelindsay-h1.svg" class="title">
+                <p>VISUAL DESIGNER</p>
             </div>
-        </div>
-    </section>
-    <section id="home-portfolio">
-        <div class="max-width">
-            <h2>Portfolio</h2>
-            <div class="slider-container">
-                <a href="neutron.html" class="item neutron">
-                    <h3>Neutron 4</h3>
-                    <div class="secondary-button">Learn more</div>
-                </a>
-                <a href="bv.html" class="item bv">
-                    <h3>Building Ventures</h3>
-                    <div class="secondary-button">Learn more</div>
-                </a>
-                <a href="ws-campaigns.html" class="item ws">
-                    <h3>WordStream Campaigns</h3>
-                    <div class="secondary-button">Learn more</div>
-                </a>
+            <div class="width-100" id="home-portfolio">
+                    <img src="images/recent-work.svg" alt="Recent Work" class="title">
+                <a class="main-button" href="portfolio.html">See all work</a>
+                <div class="slider-container">
+                    <div class="thumbnail-block">
+                        <a href="neutron.html">
+                            <img class="thumbnail" src="images/n4-thumbnail.png" alt="Neutron 4">
+                        </a>
+                        <a href="neutron.html"><h3>Neutron 4</h3></a>
+                    </div>
+                    <div class="thumbnail-block">
+                        <a href="bv.html">
+                            <img class="thumbnail" src="images/bv-thumbnail.png" alt="Builing Ventures">
+                        </a>
+                        <a href="bv.html"><h3>Building Ventures</h3></a>
+                    </div>
+                    <div class="thumbnail-block">
+                        <a href="ws-pricing.html">
+                            <img class="thumbnail" src="images/ws-pricing-thumbnail.png" alt="WordStream Pricing Page">
+                        </a>
+                        <a href="ws-pricing.html"><h3>WordStream Pricing Page</h3></a>
+                    </div>
+                </div>
             </div>
-            <a class="main-button" href="portfolio.html">See all work</a>
         </div>
     </section>
     <section id="home-resume">
+        <img src="images/right-side-lines.png" class="decorative-lines">
         <div class="max-width">
             <div class="width-100">
-                <div class="resume-download width-66">
-                    <h2>Experience</h2>
+                <div class="resume-download width-100">
+                    <img src="images/experience.svg" alt="Experience" class="title">
                     <a class="main-button" href="klindsay-resume-2022.pdf">Download resume</a>
                 </div>
-                <p class="width-66 large">I’m a visual designer with a “Swiss Army” set of skills that have helped me thrive in a variety of businesses. I am especially passionate about web experiences and love noodling with code, but I also enjoy working on branding and marketing design.</p>
+                <p class="width-75 large">I’m a visual designer with a “Swiss Army” set of skills that have helped me thrive in a variety of businesses. I am especially passionate about web experiences and love noodling with code, but I also enjoy working on branding and marketing design.</p>
             </div>
             <div class="width-33">
-                <h4>iZotope/Soundwide</h4>
-                <p><b>Senior Visual Designer 2021-Present<br />
+                <h4>iZotope (Soundwide)</h4>
+                <p class="title"><b>Senior Visual Designer 2021-Present<br />
                 Multimedia Designer 2020-2021</b></p>
                 <p>Lead the design of campaigns for major product launches as well as recurring monthly promotions. Worked on the user experience and visual design of the web portal for a subscription product, focusing on personalization for the first time user experience.</p>
             </div>
             <div class="width-33">
                 <h4>WordStream</h4>
-                <p><b>Senior Visual Designer 2019-2020<br />
+                <p class="title"><b>Senior Visual Designer 2019-2020<br />
                 Visual Designer 2017-2018</b></p>
                 <p>Responsible for leading the creative marketing team, overseeing design & video. Established brand guidelines, updating and adding new patterns to a design library used for the web, email, ad creative, & in product. Regularly collaborated cross-departmentally and helped foster a design culture between marketing and product design.</p>
             </div>
             <div class="width-33">
                 <h4>Fiksu</h4>
-                <p><b>Designer 2015-2017</b></p>
+                <p class="title"><b>Designer 2015-2017</b></p>
                 <p>Worked on several mobile marketing campaigns for a variety of external clients. Designed a new brand style guide, internal marketing materials, and a website for FreeMyApps. Migrated Fiksu.com to Wordpress, responsible for both design and development.</p>
             </div>
             <div class="width-33">
                 <h4>Vsnap</h4>
-                <p><b>Lead Designer 2013-2015</b></p>
+                <p class="title"><b>Lead Designer 2013-2015</b></p>
                 <p>Responsible for executing product design from wireframes through visual design.  Designed branding, including a logo and a full style guide. Designed and developed the homepage. Created infographics, emails, and other marketing materials.</p>
             </div>
             <div class="width-33">
                 <h4>PerkStreet</h4>
-                <p><b>Designer 2012-2013</b></p>
+                <p class="title"><b>Designer 2012-2013</b></p>
                 <p>Unified brand look and feel with a style guide. Designed homepage and landing pages. Created mobile application UI design. Directed photoshoots. Produced website banners, HTML emails, social media graphics, and direct mail collateral.</p>
             </div>
             <div class="width-33">
                 <h4>Everest Gaming/CIDC</h4>
-                <p><b>Interactive Designer 2011-2012</b></p>
+                <p class="title"><b>Interactive Designer 2011-2012</b></p>
                 <p>Created designs for marketing campaigns, including landing pages, animated banners, and emails. Worked with content team to help code pages in the CMS. Consistently delivered projects in a fast-paced environment.</p>
             </div>
         </div>
     </section>
     <section id="home-contact">
         <div class="max-width">
-            <div class="width-33">
+            <div class="width-50">
                 <div>
-                    <h2>Get in touch</h2>
-                    <p class="large">Interested in working together? Let’s chat.</p>
+                    <img src="images/get-in-touch.svg" alt="Get in touch" class="title">
                 </div>
             </div>
-            <div class="width-66">
+            <div class="width-50">
                 <div class="contact-info">
                     <div>
                         <h4>Email</h4>
@@ -137,9 +177,9 @@
 
             </div>
         </div>
+        <div class="footer">
+            <p>&copy; 2023 Kate Lindsay</p>
+        </div>
     </section>
-    <footer>
-        <p>&copy; 2022 Kate Lindsay</p>
-    </footer>  
 </body>
 </html>

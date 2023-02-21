@@ -22,21 +22,53 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="js/sticky-nav.js"></script>
+<script src="js/sticky-nav.js"></script>
+
+<script type="text/javascript">
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 
 </head>
 
 <body>
-    <nav id="main-nav" class="portfolio-page">
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav">
+        <div class="logo-bar">
+            <a href="#home">
+                <div class="nav-logo"></div>
+            </a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="portfolio.html" class="page-link">Portfolio</a>
+        <a href="#home-resume" class="page-link">Experience</a>
+        <a href="#home-contact" class="page-link">Contact</a>
+      </div>
+      
+    </div>
+
+    <nav id="main-nav" class="homepage">
         <div class="max-width">
             <a href="index.html"><div class="nav-logo"></div></a>
             <ul>
                 <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="index.html#home-resume">RESUME</a></li>
-                <li><a href="index.html#home-contact">CONTACT</a></li>             
-                <li><a href="https://telelectrix.com" target="_blank">MUSIC</a></li>
+                <li><a href="#home-resume">EXPERIENCE</a></li>
+                <li><a href="#home-contact">CONTACT</a></li>             
             </ul>
         </div>
     </nav>
@@ -46,28 +78,34 @@
                 <h4>Portfolio</h4>
                 <ul>
                     <li><a href="neutron.html">Neutron 4</a></li>
-                    <li><a href="product-messaging.html">In-Product Messaging</a></li>
+                    <li><a href="product-messaging.html">Music Production Suite Pro</a></li>
                     <li><a href="bv.html">Building Ventures</a></li>
                     <li><a href="ws-campaigns.html">WordStream Campaigns</a></li>
-                    <li><a href="ws-pricing.html" class="active">WordStream Pricing Page</a></li>
+                    <li><a href="#" class="selected">WordStream Pricing Page</a></li>
                     <li><a href="telelectrix.html">Telelectrix</a></li>
                 </ul>
             </div>
-            <div class="width-75">
-                <h2>WordStream Pricing Page</h2>
-                <p class="large">Our pricing page needed a serious overall to optimize for both clarity and conversions. Gathering feedback from both internal stakeholders and potential customers, we launched a new design that saw an improvement in conversions.</p>
+            <div class="width-75 portfolio-column">
+                <div>
+                    <img src="images/ws-pricing-page.svg" alt="WordStream Campaigns" class="portfolio-title">
+                    <p class="large">Our pricing page needed a serious overall to optimize for both clarity and conversions. Gathering feedback from both internal stakeholders and potential customers, we launched a new design that saw an improvement in conversions.</p>
+                </div>
 
-                <h5>Original page (left) &amp; initial concepts</h5>
-                <img src="images/ws-pricing-old.jpg" alt="WordStream Old Pricing Page">
+                <div>
+                    <h4>Original page (left) &amp; initial concepts</h4>
+                    <img src="images/ws-pricing-old.jpg" alt="WordStream Old Pricing Page">
+                </div>
 
-                <h5>Final design</h5>
-                <img src="images/ws-pricing-final.jpg" alt="WordStream Pricing Page">
+                <div>
+                    <h4>Final design</h4>
+                    <img src="images/ws-pricing-final.jpg" alt="WordStream Pricing Page">
+                </div>
 
             </div>
         </div>
     </section>
     <footer>
-        <p>&copy; 2022 Kate Lindsay</p>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Kate Lindsay</p>
     </footer>  
 </body>
 </html>

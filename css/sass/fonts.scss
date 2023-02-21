@@ -1,15 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
-  font-family: 'Red Hat Display', Helvetica, Arial, sans-serif;
+  font-family: 'Space Mono', monospace;
   font-weight: normal;
   color: $black;
   -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Shrikhand', sans-serif;
+  font-family: 'Space Mono', monospace;
   margin: 0;
   padding: 0;
 }
@@ -28,14 +27,19 @@ h2 {
 
 
 h3 {
-  font-size: 3em;
+  font-size: 2.25em;
   line-height: 1em;
+  letter-spacing: .125em;
+  font-weight: normal;
 }
 
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.75em;
   line-height: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .125em;
   margin-bottom: .25em;
 }
 
@@ -47,14 +51,15 @@ h5 {
 }
 
 p { 
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Space Mono', sans-serif;
   font-size: 1em;
   margin: 0 0 1em 0; 
   padding: 0;
 }
 
 p.large {
-  font-size: 1.75em;
+  font-size: 1.125em;
+  line-height: 1.5;
 }
 
 a {

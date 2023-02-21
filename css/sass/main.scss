@@ -18,24 +18,57 @@ $breakpoint-desktop: 1440px;
 	row-gap: 1.5em;
 }
 
+body {
+	background: $black;
+	color: $white;
+}
+
 .width-33 {
 	width: 27%;
+
+	@media screen and (max-width: 768px) {
+		width: 44%;
+	}
+
+	@media screen and (max-width: 390px) {
+		width: 100%;
+	}
 }
 
 .width-25 {
-	width: 25%
+	width: 25%;
+
+	@media screen and (max-width: 768px) {
+		width: 44%;
+	}
+
+	@media screen and (max-width: 390px) {
+		width: 100%;
+	}
 }
 
 .width-50 {
 	width: 44%;
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 .width-66 {
 	width: 66%;
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 .width-75 {
 	width: 75%;
+
+	@media screen and (max-width: 768px) {
+		width: 100%;
+	}
 }
 
 .width-100 {
@@ -49,3 +82,4 @@ $breakpoint-desktop: 1440px;
 		max-width: 90%;
 	}
 }
+

@@ -1,20 +1,20 @@
 .main-button {
-	border-radius: 6.5em;
-	background: $blue;
+	background: transparent;
+	font-size: 1.3125em;
 	display: inline-block;
-	padding: 1.5em 2em;
-	color: $purple;
+	padding: 1.25em 2.25em;
+	color: $white;
 	font-weight: bold;
 	text-decoration: none;	
-	border: 3px solid $blue;
+	border: 3px solid $white;
 	text-transform: uppercase;
 	transition-timing-function: ease-in-out;
 	transition: background .5s;
 }
 
 .main-button:hover {
-	background: transparent;
-	color: $blue;
+	background: $white;
+	color: $pink;
 }
 
 .secondary-button {

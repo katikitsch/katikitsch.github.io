@@ -6,10 +6,18 @@
 	position: absolute;
 	top: 0;
 
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+
 	.max-width {
 		justify-content: space-between;
 		align-items: center;;
 	}
+}
+
+#main-nav.homepage {
+	margin-top: 3em;
 }
 
 #main-nav.portfolio-page {
@@ -19,6 +27,8 @@
 				background: linear-gradient(90deg, rgba(201,161,242,1) 0%, rgba(245,142,199,1) 100%);
   			-webkit-background-clip: text;
   			-webkit-text-fill-color: transparent;
+  			font-size: 1.3125em;
+  			letter-spacing: 0.125em;
 				}
 			}
 		}
@@ -33,17 +43,19 @@
 	display: flex;
 	align-items: center;
 	align-content: flex-start;
-	gap: 2em;
+	gap: 2.5em;
 	margin: 0;
 	padding: 0;
 }
 
 #main-nav ul li a {
-	font-weight: bold;
-	color: #ffffff;
+	font-weight: normal;
+	color: $white;
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
+  font-size: 1.3125em;
+  letter-spacing: 0.125em;
 }
 
 #main-nav ul li a:after {
@@ -54,7 +66,7 @@
   	height: 2px;
   	bottom: 0;
   	left: 0;
-  	background-color: $blue;
+  	background-color: $pink;
   	transform-origin: bottom right;
   	transition: transform 0.25s ease-out;
 }
@@ -68,28 +80,27 @@
 	height: 48px;
 	width: 48px;
 	display: inline-block;
-	background: url('../images/kl-logo.svg');
+	background: url('../images/kl-logo-white.svg');
 	background-size: 100%;
 }
 
 #main-nav.scrolled {
-  background-color: #fff !important;
+  background-color: #000 !important;
   transition: background-color 200ms linear;
   position: fixed !important;
   z-index: 9999;
+  margin-top: 0;
   -webkit-box-shadow: 0px 7px 15px -4px rgba(0,0,0,0.15); 
 	box-shadow: 0px 7px 15px -4px rgba(0,0,0,0.15);
 
 	.nav-logo {
-		background: url('../images/kl-logo-color.svg');
+		background: url('../images/kl-logo-pink.svg');
 	}
 
 	ul {
 		li {
 			a {
-				background: linear-gradient(90deg, rgba(201,161,242,1) 0%, rgba(245,142,199,1) 100%);
-  			-webkit-background-clip: text;
-  			-webkit-text-fill-color: transparent;
+				color: $pink;
 			}
 		}
 	}
@@ -107,4 +118,66 @@ footer {
 		margin: 0;
 		padding: 0;
 	}
+}
+
+// Mobile
+
+/* Style the navigation menu */
+.mobile-nav {
+  overflow: hidden;
+  background: $black;
+  color: $pink;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  border-bottom: 2px solid $pink;
+
+  @media screen and (min-width: 769px) {
+  	display: none;
+  }
+
+  .logo-bar {
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	padding: 1em;
+  }
+
+  a.icon {
+  	.fa {
+  		font-size: 2em !important;
+  		color: $white;
+
+  		&:hover {
+  			color: $pink;
+  		}
+  	}
+  }
+
+  #myLinks {
+	  display: none;
+	}
+
+	a.page-link {
+	  color: $pink;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 1.25em;
+	  display: block;
+	  background: $black;
+	  text-transform: uppercase;
+	  letter-spacing: .125em;
+
+	  &:hover {
+	  	background: $pink;
+	  	color: $black;
+	  }
+	}
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: $pink;
+  color: $black;
 }
