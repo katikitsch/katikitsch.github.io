@@ -309,7 +309,7 @@ footer p {
     padding: 0 6em;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
   #home-header .max-width .width-50:first-child {
     padding: 0 3em;
   }
@@ -457,7 +457,7 @@ footer p {
     height: 25%;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
   #home-resume .decorative-lines {
     height: 10%;
     top: -4em;
@@ -466,7 +466,7 @@ footer p {
 
 .resume-download {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2em;
 }
@@ -509,7 +509,7 @@ footer p {
     width: 44%;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
   .slider-container .thumbnail-block {
     width: 100%;
   }
@@ -708,7 +708,7 @@ body {
     width: 44%;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
   .width-33 {
     width: 100%;
   }
@@ -722,7 +722,7 @@ body {
     width: 44%;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 500px) {
   .width-25 {
     width: 100%;
   }
